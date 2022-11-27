@@ -44,6 +44,7 @@ void bfs(string startVertex, string destination){
 };
 int main(){
 	Graph g(20);
+	
 	g.addVertex("Rumah",0, 0);
     g.addVertex("Kos Putri",0, 1);
     g.addVertex("Masjid",0, 11);
@@ -56,15 +57,18 @@ int main(){
     g.addVertex("Bengkel",5, 6);
     g.addVertex("Es Teh Indonesia",6, 7);
     g.addVertex("Depot Nasi Goreng",7, 8);
-    g.addVertex("SPBU",7, 19);
+    g.addVertex("SPBU 2",7, 19);
 	g.addVertex("Masjid",8, 9);
 	g.addVertex("Barber",9, 10);
+	g.addVertex("Barber",10, 10);
 	g.addVertex("Rumah Bersalin",11, 12);
 	g.addVertex("AHASS",12, 13);
-	g.addVertex("SPBU 2",13, 14);
+	g.addVertex("SPBU",13, 14);
+	g.addVertex("Hotel",15, 15);
 	g.addVertex("Hotel",16, 15);
 	g.addVertex("SMPN 9",16, 17);
     g.addVertex("SMKN 2",17, 18);
+    g.addVertex("SPBU 2",19, 19);
     
 	cout << "bfs destinations" << endl;
 	g.bfs("Rumah", "Bengkel");
