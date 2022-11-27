@@ -23,8 +23,8 @@ void addVertex(string str, int v1, int v2){
 void bfs(string startVertex, string destination){
 	bool visited[20] = {false};
 	queue<int> q;
-	q.push(1);
-	visited[1] = true;
+	q.push(0);
+	visited[0] = true;
 	while(!q.empty()){
 		int flag = 0;
 		for(int i = 0; i<= 20; i++){
